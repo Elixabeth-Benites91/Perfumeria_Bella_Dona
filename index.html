@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html logo.png="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Dona | Perfumería y Cosmética</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo de Bella Dona Perfumería y Cosmética">
+        <h1>Bella Dona</h1>
+        <p>Perfumería & Cosmética</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Descubre tu esencia</h2>
+            <p>
+                En Bella Dona encontrarás perfumes y productos
+                de cosmética para acompañar tu estilo y realzar
+                tu belleza.
+            </p>
+        </section>
+
+        
+
+<section id="productos">
+    <h2>Nuestros productos</h2>
+    <p class="subtitulo">Descubre tu esencia, realza tu belleza.</p>
+
+    <div class="contenedor-productos">
+
+        <article class="tarjeta">
+            <div class="icono-producto">✧</div>
+            <h3>Perfumes</h3>
+            <p>Fragancias que reflejan tu personalidad.</p>
+            <p class="precio">Desde 35 $</p>
+        </article>
+
+        <article class="tarjeta">
+            <div class="icono-producto">♡</div>
+            <h3>Maquillaje</h3>
+            <p>Colores para resaltar tu belleza natural.</p>
+            <p class="precio">Desde 15 $ </p>
+        </article>
+
+        <article class="tarjeta">
+            <div class="icono-producto">❀</div>
+            <h3>Cuidado facial</h3>
+            <p>Mima tu piel con productos especiales.</p>
+            <p class="precio">Desde 20 $</p>
+        </article>
+
+
+    </div>
+</section>
+
+
+        
+<section id="resenas">
+    <h2>Opiniones de nuestros clientes</h2>
+    <p class="subtitulo">La belleza está en los pequeños detalles.</p>
+
+    <div class="contenedor-resenas">
+
+        <article class="resena">
+            <p class="estrellas">★★★★★</p>
+            <p>"Me encanta la presentación de los productos y la atención recibida."</p>
+            <h3>María G.</h3>
+        </article>
+
+        <article class="resena">
+            <p class="estrellas">★★★★★</p>
+            <p>"Una selección preciosa de perfumes y cosmética."</p>
+            <h3>Laura M.</h3>
+        </article>
+
+        <article class="resena">
+            <p class="estrellas">★★★★★</p>
+            <p>"Un diseño elegante y productos para cuidarse cada día."</p>
+            <h3>Claudia R.</h3>
+        </article>
+
+    </div>
+</section>
+
+
+        
+<section id="contacto">
+    <h2>Contacta con nosotros</h2>
+    <p class="subtitulo">Estamos aquí para ayudarte a encontrar tu esencia.</p>
+
+    <form action="https://formspree.io/f/xwlvrwov" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"
+               placeholder="Escribe tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"
+               placeholder="tu@email.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5"
+                  placeholder="¿En qué podemos ayudarte?" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+
+    </form>
+</section>
+
+
+<footer>
+    <p>&copy; 2026 Bella Dona Perfumería y Cosmética.</p>
+    <p>Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

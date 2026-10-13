@@ -1,0 +1,356 @@
+
+
+/* Estilos generales de Bella_Dona */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+    --beige: #F5EFE6;
+    --violeta: #6B4E71;
+    --violeta-oscuro: #3D2C40;
+    --dorado: #C5A46D;
+    --blanco: #FFFFFF;
+    --texto: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--beige);
+    color: var(--texto);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--violeta-oscuro);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Cabecera */
+
+header {
+    background-color: var(--blanco);
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 3px solid var(--dorado);
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Navegación */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: var(--violeta);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--dorado);
+}
+
+
+/* Secciones */
+
+section {
+    padding: 60px 5%;
+    scroll-margin-top: 20px;
+}
+
+#inicio {
+    background: linear-gradient(
+        135deg,
+        var(--beige),
+        var(--blanco)
+    );
+    text-align: center;
+    padding: 90px 5%;
+}
+
+#productos {
+    background-color: var(--blanco);
+}
+
+#nosotros {
+    background-color: var(--beige);
+}
+
+#contacto {
+    background-color: #E9DFEB;
+}
+
+
+
+/* CABECERA DE BELLA DONA */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 3px solid #C5A46D;
+}
+
+/* Logo */
+
+header img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Nombre de la perfumería */
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #3D2C40;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Eslogan */
+
+header p {
+    font-family: 'Lato', sans-serif;
+    color: #6B4E71;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+nav {
+    background-color: #6B4E71;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #E8D6AE;
+}
+
+
+/* Iconos decorativos de los productos */
+
+.icono-producto {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9DFEB;
+    color: #6B4E71;
+    font-size: 55px;
+    border-radius: 8px;
+}
+
+/* Adaptación de las tarjetas */
+  
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+    
+.tarjeta {
+    background-color: #F5EFE6;
+    width: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    color: #6B4E71;
+    font-size: 23px;
+}
+
+.tarjeta .precio {
+    color: #6B4E71;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* SECCIÓN DE RESEÑAS */
+
+#resenas {
+    background-color: #E9DFEB;
+    text-align: center;
+}
+
+#resenas h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* GRID: organiza las reseñas */
+
+.contenedor-resenas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+/* Tarjetas de reseñas */
+
+.resena {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.resena p {
+    line-height: 1.6;
+}
+
+.resena .estrellas {
+    color: #C5A46D;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.resena h3 {
+    color: #6B4E71;
+    font-size: 18px;
+}
+
+/* Adaptación para móviles */
+
+@media (max-width: 768px) {
+    .contenedor-resenas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* FORMULARIO DE CONTACTO */
+
+#contacto {
+    background-color: #F5EFE6;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 550px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+#contacto label {
+    color: #3D2C40;
+    font-weight: bold;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D4C5D8;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    outline: 2px solid #6B4E71;
+    border-color: #6B4E71;
+}
+
+#contacto button {
+    background-color: #6B4E71;
+    color: #FFFFFF;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+    background-color: #3D2C40;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #4b304f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
